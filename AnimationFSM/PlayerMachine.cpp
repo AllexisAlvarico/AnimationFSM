@@ -42,3 +42,18 @@ void PlayerFSM::climbing()
 {
 	m_current->climbing(this);
 }
+
+void PlayerFSM::prone()
+{
+	m_current->prone(this);
+}
+
+void PlayerFSM::crouching()
+{
+	m_current->crouching(this);
+}
+
+void PlayerFSM::running()
+{
+	m_current->running(this);
+}

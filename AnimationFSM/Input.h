@@ -11,7 +11,10 @@ public:
 		IDLE,
 		UP,
 		LEFT,
-		RIGHT
+		RIGHT,
+		Down,
+		LCRTL,
+		LALT
 	};
 
 	void setCurrent(Action);

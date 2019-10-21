@@ -27,6 +27,18 @@ public:
 	{
 		DEBUG_MSG("State::Climbing");
 	}
+	virtual void prone(PlayerFSM* a)
+	{
+		DEBUG_MSG("State::Prone");
+	}
+	virtual void crouching(PlayerFSM* a)
+	{
+		DEBUG_MSG("State::Prone");
+	}
+	virtual void running(PlayerFSM* a)
+	{
+		DEBUG_MSG("State::Prone");
+	}
 };
 
 #endif // ! ANIMATION_H

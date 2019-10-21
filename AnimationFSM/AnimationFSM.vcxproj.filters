@@ -72,6 +72,15 @@
     <ClInclude Include="PlayerFSM.h">
       <Filter>Header Files\FSM</Filter>
     </ClInclude>
+    <ClInclude Include="Prone.h">
+      <Filter>Header Files\FSM</Filter>
+    </ClInclude>
+    <ClInclude Include="Running.h">
+      <Filter>Header Files\FSM</Filter>
+    </ClInclude>
+    <ClInclude Include="Crouching.h">
+      <Filter>Header Files\FSM</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -96,6 +105,15 @@
       <Filter>Source Files\GameObject</Filter>
     </ClCompile>
     <ClCompile Include="PlayerMachine.cpp">
+      <Filter>Source Files\FSM</Filter>
+    </ClCompile>
+    <ClCompile Include="Prone.cpp">
+      <Filter>Source Files\FSM</Filter>
+    </ClCompile>
+    <ClCompile Include="Crouching.cpp">
+      <Filter>Source Files\FSM</Filter>
+    </ClCompile>
+    <ClCompile Include="Running.cpp">
       <Filter>Source Files\FSM</Filter>
     </ClCompile>
   </ItemGroup>
