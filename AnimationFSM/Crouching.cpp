@@ -16,3 +16,4 @@ void Crounching::climbing(PlayerFSM* a)
 	a->setCurrent(new Climbing());
 	delete this;
 }
+

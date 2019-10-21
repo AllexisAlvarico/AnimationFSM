@@ -42,8 +42,15 @@ void Player::handleInput(Input in)
 		//std::cout << "Player Left" << std::endl;
 		m_state.climbing();
 		break;
+	case Input::Action::RIGHT:
+		//std::cout << "Player Left" << std::endl;
+		m_state.running();
+		break;
 	case Input::Action::Down:
 		m_state.prone();
+		break;
+	case Input::Action::LCRTL:
+		m_state.crouching();
 		break;
 	default:
 		break;

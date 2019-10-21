@@ -13,8 +13,7 @@ public:
 		LEFT,
 		RIGHT,
 		Down,
-		LCRTL,
-		LALT
+		LCRTL
 	};
 
 	void setCurrent(Action);

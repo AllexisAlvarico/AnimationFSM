@@ -2,6 +2,8 @@
 #include <Jumping.h>
 #include <Climbing.h>
 #include <Prone.h>
+#include <Crouching.h>
+#include <Running.h>
 
 #include <string>
 
@@ -23,7 +25,7 @@ void Idle::climbing(PlayerFSM* a)
 
 void Idle::prone(PlayerFSM* a)
 {
-	std::cout << "Idle -> prone" << std::endl;
+	std::cout << "Idle -> Prone" << std::endl;
 	a->setCurrent(new Prone());
 	delete this;
 }
@@ -31,13 +33,13 @@ void Idle::prone(PlayerFSM* a)
 void Idle::crouching(PlayerFSM* a)
 {
 	std::cout << "Idle -> Crouching" << std::endl;
-	a->setCurrent(new Prone());
+	a->setCurrent(new Crounching());
 	delete this;
 }
 
 void Idle::running(PlayerFSM* a)
 {
 	std::cout << "Idle -> Running" << std::endl;
-	a->setCurrent(new Prone());
+	a->setCurrent(new Running());
 	delete this;
 }

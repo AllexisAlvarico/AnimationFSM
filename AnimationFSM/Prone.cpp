@@ -13,7 +13,7 @@ void Prone::idle(PlayerFSM* a)
 }
 void Prone::climbing(PlayerFSM* a)
 {
-	std::cout << "Prone -> Jump" << std::endl;
+	std::cout << "Prone -> Climbing" << std::endl;
 	a->setCurrent(new Climbing());
 	delete this;
 }
